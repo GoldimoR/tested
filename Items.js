@@ -6677,7 +6677,6 @@ var Items;
         if (!enemy || enemy <= 0) {
             return;
         }
-        let multiplier = enemy.GetMagicalArmorDamageMultiplier();
         let dis = (myHero.GetAbsOrigin().sub(enemy.GetAbsOrigin())).Length();
         for (let index = 1; index < enemy.length; index++) {
             const npc = enemy[index];
