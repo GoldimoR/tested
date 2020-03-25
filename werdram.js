@@ -6886,7 +6886,7 @@ var Items;
     Items.antiLes = antiLes;
     function autoPingTP() {
         if (Menu.GetValue(Items.pingTP) === true) {
-            if (Items.TPParticleTime >= 0) {
+            if (Items.TPParticleTime !== 0) {
                 MiniMap.Ping(Items.TPParticlePosition, 4, true);
             }
         }
